@@ -11,7 +11,7 @@ mongoClient.connect(url, function(err, DB) {
 
 	dataBase
 	.collection('users')
-	.updateOne({ username: 'tinatime' }, { $set: { age: 0 } })
+	.updateOne({ username: 'tinatime' }, { $set: { age: 40 } })
 	.then(function(data) {
 		console.log('New age: 40');
 	}).catch(console.log);
